@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<%- include('parts/head.html', {title: title}) %>
+
+<body>
+<header>
+    <nav>
+        <a href="/" style="background-color: white;">Експертна система вибору засобів зв'язку</a>
+        <a href="/admin">Адміністрування БД</a>
+    </nav>
+</header>
+<div class="about" style="width: 100%; text-align: center;">
+    <label style="font-size: 1.5em">
+        Параметри для швидкого пошуку:
+    </label>
+</div>
+<br>
+<div class="wrapper">
+    <div class="block">
+        <div class="item">
+            <label for="new">Новинка</label>
+            <input type="checkbox" id="new">
+        </div>
+        <div class="item">
+            <label for="smartphone">Спершу смартфони</label>
+            <input type="checkbox" id="smartphone">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="apple">Шукати апарати Apple</label>
+            <input type="checkbox" id="apple">
+        </div>
+        <div class="item">
+            <label for="android">Шукати апарати на Android</label>
+            <input type="checkbox" id="android">
+        </div>
+        <div class="item">
+            <label for="windows">Шукати апарати Windows</label>
+            <input type="checkbox" id="windows">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="cheap">Дешевше 3000 гривень</label>
+            <input type="checkbox" id="cheap">
+        </div>
+        <div class="item">
+            <label for="cheaptop">Менше 5000 грн, 2 GB RAM, 1.2 gHz</label>
+            <input type="checkbox" id="cheaptop">
+        </div>
+        <div class="item">
+            <label for="top">Більше 3 GB RAM та 1.5 gHz CPU</label>
+            <input type="checkbox" id="top">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="camerafront">Є камера для селфі</label>
+            <input type="checkbox" id="camerafront">
+        </div>
+        <div class="item">
+            <label for="camerarear">Хороша основна камера</label>
+            <input type="checkbox" id="camerarear">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="dualsim">Є дві сім-карти</label>
+            <input type="checkbox" id="dualsim">
+        </div>
+        <div class="item">
+            <label for="sdcard">Наявний слот карти пам'яті</label>
+            <input type="checkbox" id="sdcard">
+        </div>
+        <div class="item">
+            <label for="tv">Можливість керування TV</label>
+            <input type="checkbox" id="tv">
+        </div>
+        <div class="item">
+            <label for="nfc">Безконтактні платежі</label>
+            <input type="checkbox" id="nfc">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="wifi">WiFi:</label>
+            <input type="checkbox" id="wifi">
+        </div>
+        <div class="item">
+            <label for="geo">Геолокація</label>
+            <input type="checkbox" id="geo">
+        </div>
+        <div class="item">
+            <label for="hsdpa">3G</label>
+            <input type="checkbox" id="hsdpa">
+        </div>
+        <div class="item">
+            <label for="lte">4G</label>
+            <input type="checkbox" id="lte">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="amoled">AMOLED дисплей:</label>
+            <input type="checkbox" id="amoled">
+        </div>
+        <div class="item">
+            <label for="big">Дисплей більше 5.5 дюймів</label>
+            <input type="checkbox" id="big">
+        </div>
+        <div class="item">
+            <label for="small">Дисплей менше 4.5 дюймів</label>
+            <input type="checkbox" id="small">
+        </div>
+        <div class="item">
+            <label for="ppi">Висока роздільна здатність дисплею</label>
+            <input type="checkbox" id="ppi">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="replacementbattery">Знімний акумулятор</label>
+            <input type="checkbox" id="replacementbattery">
+        </div>
+        <div class="item">
+            <label for="bigbattery">Хороша автономність</label>
+            <input type="checkbox" id="bigbattery">
+        </div>
+    </div>
+    <div class="block">
+        <div class="item">
+            <label for="water">Водонепроникний корпус</label>
+            <input type="checkbox" id="water">
+        </div>
+        <div class="item">
+            <label for="pull">Ударостійкий корпус</label>
+            <input type="checkbox" id="pull">
+        </div>
+        <div class="item">
+            <label for="premium">Преміальні матеріали корпусу</label>
+            <input type="checkbox" id="premium">
+        </div>
+    </div>
+    <div class="block" style="align-items: flex-end; background-color: white;">
+        <div class="item">
+            <a href="#" id="find">Шукати</a>
+        </div>
+    </div>
+</div>
+<script src="/js/find.js"></script>
+</body>
+
+</html>

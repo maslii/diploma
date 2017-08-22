@@ -1,0 +1,147 @@
+body {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid tomato;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #333333;
+    background-color: #eeeeee;
+    padding: 10px;
+    border: 3px solid tomato;
+}
+
+table {
+    margin: 20px auto;
+    width: 70%;
+    text-align: center;
+}
+
+th, td {
+    padding: 15px;
+    color: #333333;
+}
+
+button, a, table, label, input, select {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.block {
+    box-sizing: border-box;
+    background-color: #eeeeee;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    padding: 5px;
+    margin: 5px;
+    flex: 1 0 45%;
+}
+
+.item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2px;
+}
+
+label {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    box-sizing: border-box;
+    border: 3px solid tomato;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type=checkbox]:checked {
+    background-color: tomato;
+}
+
+select {
+    cursor: pointer;
+}
+
+input[type=text], select {
+    padding: 3px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    color: #333333;
+    width: 150px;
+}
+
+input[type=file] {
+    padding: 3px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    color: #333333;
+    width: 250px;
+}
+
+img {
+    height: 50vh;
+    min-height: 200px;
+}
+
+.a-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.a-block {
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 5px;
+    margin: 5px;
+    flex: 1 0 100%;
+    border: 3px solid tomato;
+}
+
+.a-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+}
+
+.a-describe{
+    display: flex;
+    flex-flow: column wrap;
+}

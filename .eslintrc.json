@@ -1,0 +1,31 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "prettier"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "node": true,
+        "jquery": true,
+        "browser": true
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "none",
+                "semi": false,
+                "singleQuote": true,
+                "tabWidth": 4,
+                "useTabs": false
+            }
+        ]
+    }
+}

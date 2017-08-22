@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<%- include('../parts/head.html', {title: title}) %>
+
+<body>
+
+<header>
+    <nav>
+        <a href="/admin">Адміністрування БД</a>
+        <a href="#" id="add">Додати</a>
+    </nav>
+</header>
+
+<div class="wrapper">
+    <div class="block">
+        <div class="item">
+            <label for="smartphone">Смартфон:</label>
+            <input type="checkbox" id="smartphone">
+        </div>
+        <div class="item">
+            <label for="vendor">Виробник:</label>
+            <input type="text" id="vendor" placeholder="Apple">
+        </div>
+        <div class="item">
+            <label for="model">Модель:</label>
+            <input type="text" id="model" placeholder="iPhone 5">
+        </div>
+        <div class="item">
+            <label for="year">Рік випуску:</label>
+            <input type="text" id="year" placeholder="2012">
+        </div>
+        <div class="item">
+            <label for="price">Ціна:</label>
+            <input type="text" id="price" placeholder="4999">
+        </div>
+        <div class="item">
+            <label for="os">Операційна система:</label>
+            <select id="os">
+                <option value="ios">iOS</option>
+                <option value="android">Android</option>
+                <option value="windows">Windows</option>
+                <option value="java">Java ME</option>
+                <option value="else">Інше</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="image">Зображення:</label>
+            <input type="file" id="image">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="displaysize">Розмір дисплею:</label>
+            <input type="text" id="displaysize" placeholder="4.0">
+        </div>
+        <div class="item">
+            <label for="displayresolution">Розширення:</label>
+            <input type="text" id="displayresolution" placeholder="720">
+        </div>
+        <div class="item">
+            <label for="displaytype">Тип матриці:</label>
+            <select id="displaytype">
+                <option value="ips">IPS</option>
+                <option value="amoled">AMOLED</option>
+                <option value="superamoled">Super AMOLED</option>
+                <option value="igzo">IGZO</option>
+                <option value="lcd">LCD</option>
+                <option value="pls">PLS</option>
+                <option value="tn">TN</option>
+                <option value="else">Інше</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="displayprotect">Захисне покриття:</label>
+            <input type="checkbox" id="displayprotect">
+        </div>
+        <div class="item">
+            <label for="display25d">2.5D Скло:</label>
+            <input type="checkbox" id="display25d">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="cpufrequency">Частота процесора:</label>
+            <input type="text" id="cpufrequency" placeholder="1.2">
+        </div>
+        <div class="item">
+            <label for="cpucore">Кількість ядер:</label>
+            <input type="text" id="cpucore" placeholder="2">
+        </div>
+        <div class="item">
+            <label for="cpuvendor">Виробник:</label>
+            <select id="cpuvendor">
+                <option value="qualcomm">Qualcomm</option>
+                <option value="mtk">MediaTek</option>
+                <option value="a">A</option>
+                <option value="exynos">Exynos</option>
+                <option value="kirin">Kirin</option>
+                <option value="else">Інше</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="ram">Оперативна пам'ять:</label>
+            <input type="text" id="ram" placeholder="1">
+        </div>
+        <div class="item">
+            <label for="rom">Внутрішня пам'ять:</label>
+            <input type="text" id="rom" placeholder="16">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="batterymah">Ємність акумулятора:</label>
+            <input type="text" id="batterymah" placeholder="1500">
+        </div>
+        <div class="item">
+            <label for="batterytype">Тип акумулятора:</label>
+            <select id="batterytype">
+                <option value="li">Li-*</option>
+                <option value="nimh">Ni-NH</option>
+                <option value="else">Інше</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="batteryfastcharge">Швидка зарядка:</label>
+            <input type="checkbox" id="batteryfastcharge">
+        </div>
+        <div class="item">
+            <label for="batterywireless">Безпровідна зарядка:</label>
+            <input type="checkbox" id="batterywireless">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="camerafrontmp">Фронтальна камера:</label>
+            <input type="text" id="camerafrontmp" placeholder="5">
+        </div>
+        <div class="item">
+            <label for="camerarearmp">Основна камера:</label>
+            <input type="text" id="camerarearmp" placeholder="12">
+        </div>
+        <div class="item">
+            <label for="camerarearflash">Спалах:</label>
+            <input type="checkbox" id="camerarearflash">
+        </div>
+        <div class="item">
+            <label for="camerarearautofocus">Автофокус:</label>
+            <input type="checkbox" id="camerarearautofocus">
+        </div>
+        <div class="item">
+            <label for="camerarearstab">Стабілізація відео:</label>
+            <input type="checkbox" id="camerarearstab">
+        </div>
+        <div class="item">
+            <label for="camerarear4k">Запис 4К відео:</label>
+            <input type="checkbox" id="camerarear4k">
+        </div>
+        <div class="item">
+            <label for="camerareardual">Подвійна основна камера:</label>
+            <input type="checkbox" id="camerareardual">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="wifi">WiFi:</label>
+            <input type="checkbox" id="wifi">
+        </div>
+        <div class="item">
+            <label for="gprs">GPRS:</label>
+            <input type="checkbox" id="gprs">
+        </div>
+        <div class="item">
+            <label for="edge">EDGE:</label>
+            <input type="checkbox" id="edge">
+        </div>
+        <div class="item">
+            <label for="hsdpa">3G:</label>
+            <input type="checkbox" id="hsdpa">
+        </div>
+        <div class="item">
+            <label for="lte">4G:</label>
+            <input type="checkbox" id="lte">
+        </div>
+        <div class="item">
+            <label for="nfc">NFC:</label>
+            <input type="checkbox" id="nfc">
+        </div>
+        <div class="item">
+            <label for="bluetooth">Bluetooth:</label>
+            <input type="checkbox" id="bluetooth">
+        </div>
+        <div class="item">
+            <label for="gps">Геолокація:</label>
+            <input type="checkbox" id="gps">
+        </div>
+        <div class="item">
+            <label for="irda">IrDA:</label>
+            <input type="checkbox" id="irda">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="sdcard">Карта пам'яті:</label>
+            <input type="checkbox" id="sdcard">
+        </div>
+        <div class="item">
+            <label for="dualsim">Дві сім-карти:</label>
+            <input type="checkbox" id="dualsim">
+        </div>
+        <div class="item">
+            <label for="fingerprint">Сканер відбитку пальця:</label>
+            <input type="checkbox" id="fingerprint">
+        </div>
+        <div class="item">
+            <label for="outusb">Стандартний micro USB вихід:</label>
+            <input type="checkbox" id="outusb">
+        </div>
+        <div class="item">
+            <label for="outusbc">Вихід USB type C:</label>
+            <input type="checkbox" id="outusbc">
+        </div>
+        <div class="item">
+            <label for="outvendor">Вихід виробника:</label>
+            <input type="checkbox" id="outvendor">
+        </div>
+        <div class="item">
+            <label for="jack">Вхід для навушників:</label>
+            <input type="checkbox" id="jack">
+        </div>
+        <div class="item">
+            <label for="fm">FM радіо:</label>
+            <input type="checkbox" id="fm">
+        </div>
+        <div class="item">
+            <label for="flash">Ліхтарик:</label>
+            <input type="checkbox" id="flash">
+        </div>
+    </div>
+
+    <div class="block">
+        <div class="item">
+            <label for="hull">Матеріал корпусу:</label>
+            <select id="hull">
+                <option value="metal">Метал</option>
+                <option value="glass">Скло</option>
+                <option value="plastic">Пластик</option>
+                <option value="wood">Дерево</option>
+                <option value="ceramics">Кераміка</option>
+                <option value="else">Інше</option>
+            </select>
+        </div>
+        <div class="item">
+            <label for="hullwaterproof">Захист від води:</label>
+            <input type="checkbox" id="hullwaterproof">
+        </div>
+        <div class="item">
+            <label for="hullproof">Захист від ударів:</label>
+            <input type="checkbox" id="hullproof">
+        </div>
+        <div class="item">
+            <label for="hullmonolith">Монолітний корпус:</label>
+            <input type="checkbox" id="hullmonolith">
+        </div>
+    </div>
+</div>
+
+<script src="/js/add.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<%- include('../parts/head.html', {title: title}) %>
+
+    <body>
+
+        <header>
+            <nav>
+                <a href="/" class="btn">Головна</a>
+                <a href="/admin/add" class="btn">Додати в БД</a>
+            </nav>
+        </header>
+
+        <table>
+            <tr>
+                <th>Виробник</th>
+                <th>Модель</th>
+                <th>Рік випуску</th>
+                <th></th>
+            </tr>
+
+            <% phones.forEach(function(phone){ %>
+                <tr>
+                    <td><%=phone['vendor']%></td>
+                    <td><%=phone['model']%></td>
+                    <td><%=phone['year']%></td>
+                    <td>
+                        <a href="/admin/delete/<%=phone['_id']%>" class="btn">Видалити</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </table>
+    </body>
+
+</html>

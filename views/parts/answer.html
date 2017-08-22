@@ -1,0 +1,33 @@
+<% phones.forEach(function(phone){ %>
+    <div class="a-wrapper">
+        <div class="a-block">
+            <div class="a-item">
+                <div class="img">
+                    <img src="/img/<%=phone['image']%>">
+                </div>
+                <div class="a-describe">
+                    <label>
+                        Виробник: <%=phone['vendor']%>
+                    </label>
+                    <label>
+                        Модель: <%=phone['model']%>
+                    </label>
+                    <label>
+                        Рік випуску: <%=phone['year']%>
+                    </label>
+                    <label>
+                        Ціна: <%=phone['price']%> гривень
+                    </label>
+                    <br>
+                    <% phone['why'].forEach(x => {%>
+                        <label><%=x%></label>
+                    <%})%>
+                    <br><br>
+                    <a target="_blank" href="http://www.google.com/search?q=<%=phone['vendor']%>+<%=phone['model']%>" style="text-align: center">
+                        Детальніше
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% }); %>
