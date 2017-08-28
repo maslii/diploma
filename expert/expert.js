@@ -3,7 +3,7 @@ module.exports = (db, wishes) => {
     const parser = require('./parse')
 
     const parsed = parser(db)
-    const rated = rating(parsed, wishes)
+    const rated  = rating(parsed, wishes)
 
     return rated
 }
